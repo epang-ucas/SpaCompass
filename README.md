@@ -68,6 +68,15 @@ checkpoint["model"]["second_stage_model.*"]  # stage 2, cell attention
 `configs/spacompass.json` and loads the checkpoint, so no fairseq installation
 is required for inference. The checksum is listed in `weights/README.md`.
 
+## Pretraining data
+
+The large-scale single-cell and spatial-transcriptomics corpus used for
+pretraining is not distributed with this release. The manuscript describing the
+corpus is currently under review; the download address will be published here
+once it has been accepted.
+
+**Download address: to be added.**
+
 ## Zero-shot embeddings
 
 ```bash
@@ -169,6 +178,7 @@ them from another directory.
   entry points are not included.
 - Embeddings are intended for zero-shot use. Fine-tuned or study-specific
   variants are outside the scope of this release.
+- The pretraining corpus is not included (see _Pretraining data_).
 - Task-specific downstream evaluations (for example niche-query benchmarks) are
   not part of this release.
 
