@@ -1,0 +1,39 @@
+# Versions validated in the release environment (see environment.yml).
+torch==2.4.1
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.5.2
+anndata==0.11.3
+scanpy==1.11.0
+scib==1.1.7
+matplotlib==3.10.1
+tqdm==4.67.1
+einops==0.8.1
+POT==0.9.5
+python-igraph==0.11.8
+leidenalg==0.10.2
+
+# These pins matter for metric reproducibility: the scIB clustering metrics
+# (NMI, ARI, graph connectivity, isolated-label F1) are computed on the
+# approximate kNN graph built by scanpy/pynndescent, so different
+# numba/llvmlite/pynndescent versions shift those values slightly.
+numba==0.61.0
+llvmlite==0.44.0
+pynndescent==0.5.13
+umap-learn==0.5.7
+h5py==3.13.0
+statsmodels==0.14.4
+joblib==1.4.2
+deprecated==1.2.18
+pydot==3.0.4
+pillow==11.1.0
+session-info2==0.1.2
+legacy-api-wrap==1.4.1
+patsy==1.0.1
+wrapt==1.17.2
+# scikit-misc is needed by scanpy's seurat_v3 HVG path; install it from
+# conda-forge if no wheel is available for your platform.
+
+# Optional:
+#   rpy2 + R mclust   needed for scripts/clustering_test.py --method mclust

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Released weights are distributed separately.
+weights/*.pt
+weights/*.pth
+weights/*.bin
+
+# Script outputs
+results/
+embeddings/
+*.npy
+*.npz
+*.h5ad
+*.pkl

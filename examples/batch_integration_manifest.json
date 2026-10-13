@@ -1,0 +1,17 @@
+[
+  {
+    "name": "ST8059048",
+    "h5ad": "data/ST8059048.h5ad",
+    "embedding": "embeddings/ST8059048/ST8059048_spacompass_embeddings.npy"
+  },
+  {
+    "name": "ST8059049",
+    "h5ad": "data/ST8059049.h5ad",
+    "embedding": "embeddings/ST8059049/ST8059049_spacompass_embeddings.npy"
+  },
+  {
+    "name": "ST8059050",
+    "h5ad": "data/ST8059050.h5ad",
+    "embedding": "embeddings/ST8059050/ST8059050_spacompass_embeddings.npy"
+  }
+]
